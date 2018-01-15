@@ -91,6 +91,7 @@
             this.Name = "NumberOfRaces";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Number Of Races";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.NumberOfRaces_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRacesToDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRacesWonToDate)).EndInit();

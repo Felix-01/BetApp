@@ -22,7 +22,7 @@ namespace BetApp
 
         private void BetsInDateOrder_Load(object sender, EventArgs e)
         {
-            string query = "SELECT * FROM BetDetails ORDER BY Date Desc;";
+            string query = "Select HorseName As 'Horse Name', RaceCourse As 'Race Course', Date, Amount As 'Amount (Millions)', Flag FROM BetDetails ORDER BY Date Desc;";
 
             SqlConnection conn = new SqlConnection(connectionString);
             SqlDataAdapter da = new SqlDataAdapter(query, conn);

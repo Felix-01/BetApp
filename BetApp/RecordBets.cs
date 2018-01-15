@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BetApp
@@ -16,8 +9,7 @@ namespace BetApp
         string connectionString = "Data Source=.;Initial Catalog=BetAppDb;Integrated Security=True";
         public RecordBets()
         {
-            InitializeComponent();
-            tbxHorseName.Focus();           
+            InitializeComponent();                     
         }
 
         private void btnRecordBet_Click(object sender, EventArgs e)
@@ -38,13 +30,13 @@ namespace BetApp
                 {
                     MessageBox.Show("Record Successfully Added");
                     btnClear_Click(sender, e);
-                    tbxHorseName.Focus();
+                    
                 }
                 else
                 {
                     MessageBox.Show("Failed to Add Record");
                     btnClear_Click(sender, e);
-                    tbxHorseName.Focus();
+                    
                 }
             }
             catch (Exception ex)
@@ -61,6 +53,14 @@ namespace BetApp
             tbxHorseName.Clear();
             tbxRaceCourse.Clear();
             cmBxFlag.Text = "";
+
+            tbxHorseName.Focus();
+        }
+
+        private void RecordBets_Load(object sender, EventArgs e)
+        {
+            dateTimePicker1.Value = DateTime.Now;
+            tbxHorseName.Focus();
         }
     }
 }

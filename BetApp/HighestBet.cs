@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BetApp
@@ -22,8 +16,8 @@ namespace BetApp
 
         private void HighestBet_Load(object sender, EventArgs e)
         {
-            string query = "Select * From BetDetails Where Amount = (Select Distinct Top(1) Max(Amount) From BetDetails Where Flag = 'True' )";
-            string query1 = "Select * From BetDetails Where Amount = (Select Distinct Top(1) Max(Amount) From BetDetails Where Flag = 'False' )";
+            string query = "Select HorseName As 'Horse Name', RaceCourse As 'Race Course', Date, Amount As 'Amount In Millions of Euro', Flag From BetDetails Where Amount = (Select Distinct Top(1) Max(Amount) From BetDetails Where Flag = 'True' )";
+            string query1 = "Select HorseName As 'Horse Name', RaceCourse As 'Race Course', Date, Amount As 'Amount In Millions of Euro', Flag From BetDetails Where Amount = (Select Distinct Top(1) Max(Amount) From BetDetails Where Flag = 'False' )";
 
             SqlConnection conn = new SqlConnection(connectionString);
 

@@ -56,9 +56,9 @@
             this.amountDataGridViewTextBoxColumn,
             this.flagDataGridViewCheckBoxColumn});
             this.dgvBets.DataSource = this.betDetailsBindingSource;
-            this.dgvBets.Location = new System.Drawing.Point(79, 36);
+            this.dgvBets.Location = new System.Drawing.Point(12, 36);
             this.dgvBets.Name = "dgvBets";
-            this.dgvBets.Size = new System.Drawing.Size(543, 357);
+            this.dgvBets.Size = new System.Drawing.Size(713, 421);
             this.dgvBets.TabIndex = 0;
             // 
             // horseNameDataGridViewTextBoxColumn
@@ -110,11 +110,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(699, 439);
+            this.ClientSize = new System.Drawing.Size(737, 469);
             this.Controls.Add(this.dgvBets);
             this.Name = "AllBetsDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Details of All Bets";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.AllBetsDetails_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBets)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.betDetailsBindingSource)).EndInit();

@@ -52,6 +52,7 @@
             this.Name = "MostPopularRaceCourse";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Most Popular Race Course";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MostPopularRaceCourse_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMostPopularRC)).EndInit();
             this.ResumeLayout(false);

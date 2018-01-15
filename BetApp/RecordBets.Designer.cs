@@ -173,6 +173,7 @@
             // 
             // RecordBets
             // 
+            this.AcceptButton = this.btnRecordBet;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Navy;
@@ -192,6 +193,8 @@
             this.Name = "RecordBets";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Record Bets";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.RecordBets_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

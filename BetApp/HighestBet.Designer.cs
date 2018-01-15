@@ -41,9 +41,9 @@
             this.dgvHighestBetWon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvHighestBetWon.BackgroundColor = System.Drawing.Color.Peru;
             this.dgvHighestBetWon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvHighestBetWon.Location = new System.Drawing.Point(87, 52);
+            this.dgvHighestBetWon.Location = new System.Drawing.Point(12, 52);
             this.dgvHighestBetWon.Name = "dgvHighestBetWon";
-            this.dgvHighestBetWon.Size = new System.Drawing.Size(540, 73);
+            this.dgvHighestBetWon.Size = new System.Drawing.Size(675, 73);
             this.dgvHighestBetWon.TabIndex = 0;
             // 
             // label1
@@ -73,9 +73,9 @@
             this.dgvHighestBetLost.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvHighestBetLost.BackgroundColor = System.Drawing.Color.Peru;
             this.dgvHighestBetLost.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvHighestBetLost.Location = new System.Drawing.Point(87, 221);
+            this.dgvHighestBetLost.Location = new System.Drawing.Point(12, 221);
             this.dgvHighestBetLost.Name = "dgvHighestBetLost";
-            this.dgvHighestBetLost.Size = new System.Drawing.Size(540, 79);
+            this.dgvHighestBetLost.Size = new System.Drawing.Size(675, 79);
             this.dgvHighestBetLost.TabIndex = 3;
             // 
             // HighestBet
@@ -91,6 +91,7 @@
             this.Name = "HighestBet";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Highest Bets";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.HighestBet_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHighestBetWon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHighestBetLost)).EndInit();

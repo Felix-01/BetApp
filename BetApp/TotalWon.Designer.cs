@@ -78,6 +78,7 @@
             // 
             // TotalWon
             // 
+            this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
@@ -89,6 +90,7 @@
             this.Name = "TotalWon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Total Won";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.TotalWon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTotalWon)).EndInit();
             this.ResumeLayout(false);
